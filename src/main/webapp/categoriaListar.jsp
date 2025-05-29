@@ -16,7 +16,11 @@
 <body>
 
 <h1>Listado de Categorías</h1>
-
+<p>
+    <a href="<%= request.getContextPath() %>/categoria/form">
+        <button type="button">➕ Nueva Categoría</button>
+    </a>
+</p>
 <p>
     Usuario: <strong><%= username.isPresent() ? username.get() : "Invitado" %></strong>
 </p>
@@ -41,6 +45,7 @@
         <td><%= cat.getCondicion() %></td>
         <td><a href="#">Editar</a></td>
         <td><a href="#">Activar o Desactivar</a></td>
+
     </tr>
     <% } %>
     </tbody>

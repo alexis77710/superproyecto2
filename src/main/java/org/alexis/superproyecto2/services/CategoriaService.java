@@ -7,5 +7,6 @@ import java.util.Optional;
 public interface CategoriaService {
     List<Categoria> Listar();
     Optional<Categoria> porId(Long id);
+    void guardar(Categoria categoria);
     //implementar metodos guardar,activar y desactivar
 }

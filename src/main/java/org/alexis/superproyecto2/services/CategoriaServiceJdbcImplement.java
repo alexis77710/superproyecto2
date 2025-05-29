@@ -34,4 +34,12 @@ public class CategoriaServiceJdbcImplement implements CategoriaService {
 
         }
     }
+    @Override
+    public void guardar (Categoria categoria){
+        try {
+            repositorioJdbcImplement.guardar(categoria);
+        }catch ( SQLException throwables){
+            throw new ServiceJdbcException(throwables.getMessage(),throwables.getCause());
+        }
+    }
 }

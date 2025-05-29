@@ -1,4 +1,4 @@
-package controllers;
+package org.alexis.superproyecto2.controllers;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -10,7 +10,6 @@ import org.alexis.superproyecto2.services.LoginService;
 import org.alexis.superproyecto2.services.LoginServiceSessionImplement;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.util.List;
 import java.util.Optional;

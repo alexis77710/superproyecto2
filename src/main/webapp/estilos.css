@@ -1,0 +1,250 @@
+/* ============ ESTILOS GENERALES ============ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 20px;
+    color: #2c3e50;
+    max-width: 1200px;
+    background: linear-gradient(to right, #ecf0f1, #ffffff);
+}
+
+/* Mensajes de estado y bienvenida */
+.status-banner,
+.login-message,
+.welcome-message {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-message {
+    color: #2c3e50;
+    font-size: 1.2em;
+}
+
+.login-message {
+    color: #7f8c8d;
+    font-size: 1.1em;
+}
+
+.welcome .username {
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Enlaces y botones */
+.login-link,
+.login-message a,
+.return-link a,
+.btn-inicio,
+.nav-button {
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 25px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-link:hover,
+.login-message a:hover,
+.return-link a:hover,
+.btn-inicio:hover,
+.nav-button:hover {
+    background-color: #2980b9;
+    text-decoration: underline;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Contenedor de login unificado */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #2980b9;
+}
+
+.login-container .error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.login-container .register-link {
+    margin-top: 15px;
+    display: block;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-container .register-link:hover {
+    text-decoration: underline;
+    color: #1abc9c;
+}
+
+/* ====== TABLAS UNIFICADAS ====== */
+.tabla-productos,
+.tabla-categoriaListar {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabla-productos thead,
+.tabla-categoriaListar thead {
+    background-color: #3498db; /* Puedes cambiar para categorías si quieres otro color */
+    color: white;
+}
+
+.tabla-categoriaListar thead {
+    background-color: #2ecc71; /* Verde para categorías */
+}
+
+.tabla-productos th,
+.tabla-productos td,
+.tabla-categoriaListar th,
+.tabla-categoriaListar td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.tabla-productos tr:nth-child(even),
+.tabla-categoriaListar tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-productos tr:hover,
+.tabla-categoriaListar tr:hover {
+    background-color: #eaf2f8;
+    transition: background-color 0.3s ease;
+}
+
+/* Precio */
+.precio,
+.price,
+.price-cell {
+    font-weight: bold;
+    color: #27ae60;
+    text-align: right;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+}
+
+.price-mask {
+    color: #95a5a6;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.price-mask:hover {
+    color: #3498db;
+}
+
+/* Estado categorías */
+.estado-activa {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.estado-inactiva {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Navegación y retorno */
+.page-navigation,
+.return-link {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.return-link a {
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #3498db;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.return-link a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-inicio {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-inicio:hover {
+    background-color: #2980b9;
+}
